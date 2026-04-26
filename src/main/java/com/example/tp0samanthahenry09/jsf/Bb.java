@@ -134,7 +134,7 @@ public class Bb implements Serializable {
             // Invalide la liste pour changer le rôle système
             this.roleSystemeChangeable = false;
         }
-        this.reponse += this.modificateur.modifier(this.question, roleSystemePourModification);
+        this.reponse = this.modificateur.modifier(this.question, roleSystemePourModification);
 
         // La conversation contient l'historique des questions-réponses depuis le début.
         afficherConversation();
